@@ -8,8 +8,39 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<header class="heading">
+		<h1>Car Insurance Form</h1>
+	</header>
+	<main class="form-body">
+		<div>
+			<form action="./main.html" method="post">
+				<label for="name">Name</label><br>
+				<input type="text" id="name" placeholder="Full name" required><br><br>
+				<label for="email">Email</label><br>
+				<input type="email" id="email" placeholder="Enter email" required><br><br>
+				<label for="gender">Gender</label><br>
+				<input type="radio" name="gender" value="male" required>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" value="female" required>
+				<label for="male">Female</label><br><br>
+				<label for="cars">Car Brands</label><br>
+				<select id="cars" required>
+					<option value="volvo">BMW</option>
+					<option value="saab">Audi</option>
+					<option value="opel">Mercedez</option>
+				</select><br><br>
+				<label for="carage">Car Age</label><br>
+				<input type="number" id="carage" value="0" required><br><br>
+				<label for="dop">Date of Purchase</label><br>
+				<input type="date" id="dop" value="19/12/2022" required><br><br>
+				<label for="password">Password</label><br>
+				<input type="password" placeholder="Enter password" id="password" required><br><br>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</main>
+	<script type="text/javascript" src="./script.js">
+	</script>
 
 </body>
 
